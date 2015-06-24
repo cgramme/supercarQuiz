@@ -1,0 +1,70 @@
+body {
+	background: #222 !important;
+}
+a {
+	text-decoration: none;
+}
+#pageone, #pagetwo, #pagethree {
+	background: #222;
+	margin-top: 50px;
+}
+.header {
+	height: 50px;
+	background: #111;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding: 0;
+	h1 {
+		margin: 0;
+	}
+}
+#main{
+	text-align: center;
+}
+#main .start-test {
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	padding: 0;
+	border-radius: 50px;
+	top: 50%;
+	left: 50%;
+	margin-top: 0px;
+	margin-left: -100px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.car-image {
+	max-width: 500px;
+	max-height: 350px;
+	border-radius: 5px;
+	@media screen and (max-width: 550px){
+		width: 100%;
+	}
+}
+#main .answers {
+	text-align: center;
+	background: #222;
+	max-width: 500px;
+	margin: 0 auto;
+	
+	button {
+		height: 50px;
+		padding: 0;
+		margin: 2px;
+		max-width: 500px;
+		background: #111;
+		border: 0px solid #000;
+		border-radius: 5px;
+	}	
+	button:hover {
+		background: #444;
+	}
+}
