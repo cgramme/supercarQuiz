@@ -1,6 +1,11 @@
 var points=0;
 
 $(document).ready(function(){
+});
+
+$(window).ready(function(){
+});
+
 	$('.wrong').on('click', function(){
 		$(this).css({'background':'#f00'});
 		points-=1;
@@ -12,7 +17,7 @@ $(document).ready(function(){
 		points+=5;
 		$('.points').html("Points: "+points);
 	});
-});
 
-$(window).ready(function(){
-});
+	$.mobile.changePage(function(){
+		alert("durp boobies");
+	});
