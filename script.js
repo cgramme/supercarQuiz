@@ -31,6 +31,9 @@ $(document).on('pagebeforehide',function(){console.log('pagebeforehide');});
 $(document).on('pagebeforeshow',function(){
 	console.log('pagebeforeshow');
 	$('.points').html("Points: "+points);
+	try{
+		$('.total-points').html("Total Points: "+points);
+	}
 });
 $(document).on('pageremove',function(){console.log('pageremove');});
 $(document).on('pageshow',function(){console.log('pageshow');});
