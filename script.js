@@ -18,9 +18,7 @@ $(window).ready(function(){
 		$('.points').html("Points: "+points);
 	});
 
-$.mobile.changePage(function(){
-		alert("durp boobies");
-	});
+
 
 
 
@@ -31,8 +29,10 @@ $(document).on('pagebeforehide',function(){console.log('pagebeforehide');});
 $(document).on('pagebeforeshow',function(){
 	console.log('pagebeforeshow');
 	$('.points').html("Points: "+points);
-	try{
-		$('.total-points').html("Total Points: "+points);
+	var page = $('body').pagecontainer( 'getActivePage' ).attr( 'id' );
+	alert("the id is " + page);
+	if(page == "results"){
+		$('.total-points').html("Points: "+points);
 	}
 });
 $(document).on('pageremove',function(){console.log('pageremove');});
