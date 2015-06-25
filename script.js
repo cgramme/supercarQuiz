@@ -22,11 +22,12 @@ $(window).ready(function(){
 
 
 
-$(document).on('pagebeforecreate',function(){console.log('pagebeforecreate');});
-$(document).on('pagecreate',function(){console.log('pagecreate');});
-$(document).on('pageinit',function(){console.log('pageinit');});
-$(document).on('pagebeforehide',function(){console.log('pagebeforehide');});
+$(document).on('pagebeforecreate',function(){$("body").pagecontainer("change","url",{changeHash:false});console.log('pagebeforecreate');});
+$(document).on('pagecreate',function(){$("body").pagecontainer("change","url",{changeHash:false});console.log('pagecreate');});
+$(document).on('pageinit',function(){$("body").pagecontainer("change","url",{changeHash:false});console.log('pageinit');});
+$(document).on('pagebeforehide',function(){$("body").pagecontainer("change","url",{changeHash:false});console.log('pagebeforehide');});
 $(document).on('pagebeforeshow',function(){
+	$("body").pagecontainer("change","url",{changeHash:false});
 	console.log('pagebeforeshow');
 	var page = $('body').pagecontainer( 'getActivePage' ).attr( 'id' );
 	if(page == "pagequestions"){
@@ -49,10 +50,10 @@ $(document).on('pagebeforeshow',function(){
 
 	}
 });
-$(document).on('pageremove',function(){console.log('pageremove');});
-$(document).on('pageshow',function(){console.log('pageshow');});
-$(document).on('pagehide',function(){console.log('pagehide');});
-$(window).load(function () {console.log("window loaded");});
-$(window).unload(function () {console.log("window unloaded");});
+$(document).on('pageremove',function(){$("body").pagecontainer("change","url",{changeHash:false});console.log('pageremove');});
+$(document).on('pageshow',function(){$("body").pagecontainer("change","url",{changeHash:false});console.log('pageshow');});
+$(document).on('pagehide',function(){$("body").pagecontainer("change","url",{changeHash:false});console.log('pagehide');});
+$(window).load(function () {$("body").pagecontainer("change","url",{changeHash:false});console.log("window loaded");});
+$(window).unload(function () {$("body").pagecontainer("change","url",{changeHash:false});console.log("window unloaded");});
 $(function () {console.log('document ready');});
 	
