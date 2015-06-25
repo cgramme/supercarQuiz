@@ -4,6 +4,7 @@ $(document).ready(function(){
 });
 
 $(window).ready(function(){
+	$("body").pagecontainer("change","url",{changeHash:false});
 });
 
 	$('body').on('click','button.wrong', function(){
@@ -19,7 +20,7 @@ $(window).ready(function(){
 	});
 
 
-$("body").pagecontainer("change","url",{changeHash:false});
+
 
 
 
