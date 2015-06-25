@@ -4,9 +4,9 @@ body {
 a {
 	text-decoration: none;
 }
-#pageone, #pagetwo, #pagethree, #pagefour {
+#pageone, #pagequestions, #results {
 	background: #222;
-	margin-top: 50px;
+	margin-top: 70px;
 }
 .header {
 	height: 50px;
@@ -16,24 +16,40 @@ a {
 	top: 0;
 	left: 0;
 	text-align: center;
-	padding: 0;
+	padding-top: 10px;
 	h1 {
 		margin: 0;
+		padding: 0;
+		text-shadow: 2px 2px 2px #000;
+		color: #fff;
+		font-size: 30px;
+		@media screen and (max-width:500px){
+			font-size: 20px;
+			margin-top: 5px;
+		}
 	}
 }
 #main{
 	text-align: center;
+	.opening-text {
+		color: #fff;
+		text-shadow: 1px 1px 2px #000;
+		font-size: 22px;
+		margin-top: 50px;
+	}
 }
 #main .start-test {
-	position: absolute;
+	background: #fff;
 	width: 200px;
 	height: 50px;
 	padding: 0;
 	border-radius: 50px;
-	top: 50%;
-	left: 50%;
-	margin-top: 0px;
-	margin-left: -100px;
+	margin: 50px auto;
+	box-shadow: 2px 2px 5px 0 #000;
+	&:hover {
+		background: #ccc;
+		box-shadow: 0 0 5px 2px #000;
+	}
 }
 .footer {
 	position: absolute;
@@ -43,10 +59,10 @@ a {
 }
 .car-image {
 	max-width: 500px;
-	max-height: 350px;
+	max-height: 300px;
 	border-radius: 5px;
 	@media screen and (max-width: 550px){
-		width: 100%;
+		width: 98%;
 	}
 }
 #main .answers {
@@ -58,13 +74,46 @@ a {
 	button {
 		height: 50px;
 		padding: 0;
-		margin: 2px;
+		margin: 0 auto 2px auto;
 		max-width: 500px;
 		background: #111;
 		border: 0px solid #000;
 		border-radius: 5px;
+		&:hover {
+			background: #444;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+			color: #fff;
+			text-shadow: 2px 2px 2px #000;
+		}
+		@media screen and (max-width: 500px){
+			height: 40px;
+			width: 98%;
+		}
 	}	
-	button:hover {
-		background: #444;
+	
+}
+.container {
+		background: #111;
+		max-width: 500px;
+		padding: 20px;
+		margin: 100px auto;
+		border-radius: 20px;
+		box-shadow: 5px 5px 10px 0 #000, inset 0 0 3px 1px #000;
+}
+
+#results {
+	p {
+		font-size: 2em;
+		color: #fff;
+		text-shadow: 2px 2px 2px #000;
 	}
+	
+}
+.points {
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;
+	margin: 10px;
 }

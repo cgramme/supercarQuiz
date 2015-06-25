@@ -9,24 +9,25 @@
 </head>
 <body>
   <div class="header">
-      <h1>Supercar Quiz</h1>
+      <h1>Supercar Challenge</h1>
   </div>
 
 <div data-role="page" id="pageone">
   <div id="main" class="main" data-role="main" class="ui-content">
-    <p>Do you think you know your supercars?<br/>Put it to the test!</p>
-    <a href="#pagetwo" data-transition="flow">
-      <button class="start-test ui-btn ui-icon-arrow-r ui-btn-icon-right">
-        <p>Start Test!</p>
-      </button>
-    </a>
+  <div class="container">
+      <p class="opening-text">Think you have what it takes to be a supercar master?</p>
+      <a href="pagetwo.html" data-transition="flow">
+        <button class="start-test ui-btn ui-icon-arrow-r ui-btn-icon-right">
+          <p>Start Test!</p>
+        </button>
+      </a>
+    </div>
   </div>
 </div> 
 
-<div data-role="page" id="pagetwo">
+<div data-role="page" id="pagequestions">
   <div id="main" class="main" data-role="main" class="ui-content">
     <p class="points">Points: 0</p>
-    <p>Select the correct answer</p>
     <img class="car-image" src="images/ferrari1.jpg" alt="car picture"/>
     <div class="answers" data-role="controlgroup" data-type="vertical">
       <button class="wrong ui-btn">
@@ -47,29 +48,10 @@
   </div>
 </div> 
 
-<div data-role="page" id="pagethree">
-  <div id="main" class="main" data-role="main" class="ui-content">
-    <p class="points">Points: 0</p>
-    <p>Select the correct answer</p>
-    <img id="image" class="car-image" src="images/mustang1969.jpg" alt="car picture"/>
-    <div id="answers" class="answers" data-role="controlgroup" data-type="vertical">
-      <button class="wrong ui-btn">
-        <p>Camero</p>
-      </button>
-      <a href="pagefour.html" data-transition="flow">
-        <button class="right ui-btn">
-          <p>Mustang</p>
-        </button>
-      </a>
-      <button class="wrong ui-btn">
-        <p>Firebird</p>
-      </button>
-      <button class="wrong ui-btn">
-        <p>Nova</p>
-      </button>
-    </div>
-  </div>
-</div>
+
+
+
+
 <script type='text/javascript' src="script.js"></script>
 </body>
 </html>
