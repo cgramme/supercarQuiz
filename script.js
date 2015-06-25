@@ -28,7 +28,10 @@ $(document).on('pagebeforecreate',function(){console.log('pagebeforecreate');});
 $(document).on('pagecreate',function(){console.log('pagecreate');});
 $(document).on('pageinit',function(){console.log('pageinit');});
 $(document).on('pagebeforehide',function(){console.log('pagebeforehide');});
-$(document).on('pagebeforeshow',function(){console.log('pagebeforeshow');});
+$(document).on('pagebeforeshow',function(){
+	console.log('pagebeforeshow');
+	$('.points').html("Points: "+points);
+});
 $(document).on('pageremove',function(){console.log('pageremove');});
 $(document).on('pageshow',function(){console.log('pageshow');});
 $(document).on('pagehide',function(){console.log('pagehide');});
