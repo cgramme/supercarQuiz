@@ -11,7 +11,6 @@ body {
 
 @-webkit-keyframes containerAnim {
    0% {@include addRotate(760deg, 0)}
-
    100% {@include addRotate(0deg, 1)}
 }
 .container-anim {

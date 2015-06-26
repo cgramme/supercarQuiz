@@ -48,14 +48,22 @@ $(document).on('pagebeforeshow',function(){
 
 		if(points >= 25){
 			$('.rank').html("Your rank:<br>You live and breath supercars!");
+			$('.total-points').css({'color':'#0f0'});
 		}else if(points >= 20){
 			$('.rank').html("Your rank:<br>You are a true connoisseur of fine vehicles!");
+			$('.total-points').css({'color':'#0f0'});
 		}else if(points >= 15){
 			$('.rank').html("Your rank:<br>You really don't know much about cars do you?");
+			$('.total-points').css({'color':'#f00'});
 		}else if(points >= 10){
 			$('.rank').html("Your rank:<br>You probably live in a cave.");
+			$('.total-points').css({'color':'#f00'});
 		}else if(points >= 5){
 			$('.rank').html("Your rank:<br>Lets just keep this to ourselves.");
+			$('.total-points').css({'color':'#f00'});
+		}else if(points <= 4){
+			$('.rank').html("Your rank:<br>Let me try and put this nicely... um, nevermind.");
+			$('.total-points').css({'color':'#f00'});
 		}
 
 	}
