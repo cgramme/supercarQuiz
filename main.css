@@ -1,6 +1,22 @@
 body {
   background: #222 !important; }
 
+@-webkit-keyframes translateX {
+  0% {
+    -moz-transform: translateX(-1500px);
+    -webkit-transform: translateX(-1500px);
+    -o-transform: translateX(-1500px);
+    transform: translateX(-1500px); }
+  100% {
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px); } }
+.translate-x {
+  -webkit-animation-name: translateX;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; }
+
 @-webkit-keyframes containerAnim {
   0% {
     -moz-transform: rotate(760deg) scale(0);

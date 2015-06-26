@@ -2,6 +2,21 @@
 body{
 	background: #222 !important;
 }
+@mixin addTranslateX ($param){
+    -moz-transform: translateX($param);
+    -webkit-transform: translateX($param);
+    -o-transform: translateX($param);
+    transform: translateX($param);
+}
+@-webkit-keyframes translateX {
+   0% {@include addTranslateX(-1500px)}
+   100% {@include addTranslateX(0px)}
+}
+.translate-x {
+    -webkit-animation-name: translateX;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
 
 @mixin addRotate ($params1, $params2){
     -moz-transform: rotate($params1) scale($params2);
