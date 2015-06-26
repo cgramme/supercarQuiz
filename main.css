@@ -141,6 +141,10 @@ a {
   @media screen and (max-width: 500px) {
     #results p {
       font-size: 1.5em; } }
+#results .total-points {
+  font-weight: 1000; }
+#results .rank {
+  font-weight: 100; }
 
 .points {
   font-weight: bold;
