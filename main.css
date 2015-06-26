@@ -31,16 +31,12 @@ a {
   left: 0;
   text-align: center;
   padding-top: 10px; }
-  .header h1 {
-    margin: 0;
-    padding: 0;
-    text-shadow: 2px 2px 2px #000;
-    color: #fff;
-    font-size: 30px; }
-    @media screen and (max-width: 500px) {
-      .header h1 {
-        font-size: 20px;
-        margin-top: 5px; } }
+  .header img {
+    width: 450px; }
+    @media screen and (max-width: 550px) {
+      .header img {
+        width: 250px;
+        margin: 10px; } }
 
 #main {
   text-align: center; }
@@ -49,18 +45,26 @@ a {
     text-shadow: 1px 1px 2px #000;
     font-size: 22px;
     margin-top: 50px; }
+    @media screen and (max-width: 500px) {
+      #main .opening-text {
+        font-size: 18px; } }
 
 #main .start-test {
-  background: #fff;
+  background: #0c0;
   width: 200px;
   height: 50px;
   padding: 0;
   border-radius: 50px;
+  border: none;
   margin: 50px auto;
-  box-shadow: 2px 2px 5px 0 #000; }
+  box-shadow: 2px 2px 5px 0 #000, inset 0 0 5px 0 #000; }
   #main .start-test:hover {
-    background: #ccc;
-    box-shadow: 0 0 5px 2px #000; }
+    background: #090;
+    box-shadow: 0 0 5px 2px #000, inset 0 0 2px 1px #000; }
+  #main .start-test p {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold; }
 
 .footer {
   position: absolute;
@@ -108,9 +112,9 @@ a {
   margin: 100px auto;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 0 #000, inset 0 0 3px 1px #000; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     .container {
-      width: 90%;
+      width: 85%;
       margin: 50px auto;
       padding: 10px; } }
 
