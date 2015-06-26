@@ -1,4 +1,5 @@
-body {
+
+body{
 	background: #222 !important;
 }
 
@@ -60,6 +61,7 @@ a {
 		text-shadow: 1px 1px 2px #000;
 		font-size: 22px;
 		margin-top: 50px;
+		font-weight: bold;
 		@media screen and (max-width: 500px) {
 			font-size: 18px;
 		}
@@ -155,7 +157,7 @@ a {
 		font-weight: 1000;
 	}
 	.rank {
-		font-weight: 100;
+		font-weight: normal;
 	}
 	
 }

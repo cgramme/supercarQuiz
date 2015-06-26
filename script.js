@@ -46,22 +46,22 @@ $(document).on('pagebeforeshow',function(){
 		$('.total-points').html("Total Points: "+points);
 
 		if(points >= 25){
-			$('.rank').html("<b>Your rank:<b><br>You live and breath supercars!");
+			$('.rank').html("<b>Your rank:</b><br><i>\"You live and breath supercars!\"</i>");
 			$('.total-points').css({'color':'#0f0'});
 		}else if(points >= 20){
-			$('.rank').html("<b>Your rank:<b><br>You are a true connoisseur of fine vehicles!");
+			$('.rank').html("<b>Your rank:</b><br><i>\"You are a true connoisseur of fine vehicles!</i>\"");
 			$('.total-points').css({'color':'#0f0'});
 		}else if(points >= 15){
-			$('.rank').html("<b>Your rank:<b><br>You really don't know much about cars do you?");
+			$('.rank').html("<b>Your rank:</b><br><i>\"You really don't know much about cars do you?\"</i>");
 			$('.total-points').css({'color':'#f00'});
 		}else if(points >= 10){
-			$('.rank').html("<b>Your rank:<b><br>You probably live in a cave.");
+			$('.rank').html("<b>Your rank:</b><br><i>\"You probably live in a cave.\"</i>");
 			$('.total-points').css({'color':'#f00'});
 		}else if(points >= 5){
-			$('.rank').html("<b>Your rank:<b><br>Lets just keep this to ourselves.");
+			$('.rank').html("<b>Your rank:</b><br><i>\"Lets just keep this to ourselves.\"</i>");
 			$('.total-points').css({'color':'#f00'});
 		}else if(points <= 4){
-			$('.rank').html("<b>Your rank:<b><br>Let me try and put this nicely... um, nevermind.");
+			$('.rank').html("<b>Your rank:</b><br><i>\"Let me try and put this nicely... um, nevermind.\"<i>");
 			$('.total-points').css({'color':'#f00'});
 		}
 
