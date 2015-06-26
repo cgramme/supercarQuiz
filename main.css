@@ -1,6 +1,22 @@
 body {
   background: #222 !important; }
 
+@-webkit-keyframes containerAnim {
+  0% {
+    -moz-transform: rotate(760deg) scale(0);
+    -webkit-transform: rotate(760deg) scale(0);
+    -o-transform: rotate(760deg) scale(0);
+    transform: rotate(760deg) scale(0); }
+  100% {
+    -moz-transform: rotate(0deg) scale(1);
+    -webkit-transform: rotate(0deg) scale(1);
+    -o-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1); } }
+.container-anim {
+  -webkit-animation-name: containerAnim;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; }
+
 @-webkit-keyframes buttonZoom {
   0% {
     z-index: 10;

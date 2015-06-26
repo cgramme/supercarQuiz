@@ -1,6 +1,25 @@
 body {
 	background: #222 !important;
 }
+
+@mixin addRotate ($params1, $params2){
+    -moz-transform: rotate($params1) scale($params2);
+    -webkit-transform: rotate($params1) scale($params2);
+    -o-transform: rotate($params1) scale($params2);
+    transform: rotate($params1) scale($params2);
+}
+
+@-webkit-keyframes containerAnim {
+   0% {@include addRotate(760deg, 0)}
+
+   100% {@include addRotate(0deg, 1)}
+}
+.container-anim {
+    -webkit-animation-name: containerAnim;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes buttonZoom {
    0% {z-index: 10; transform: scale(1);}
    50% {transform: scale(1.2);}
