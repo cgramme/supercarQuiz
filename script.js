@@ -23,7 +23,6 @@ $(window).ready(function(){
 			$(this).removeClass('button-zoom').css({'background':'#111'});
 			next();
 		});
-		points-=2;
 		$('.points').html("Points: "+points).css({'color':'#0f0'}).addClass('button-zoom').delay(500).queue(function(next){
 			$(this).removeClass('button-zoom').css({'color':'#fff'});
 			next();
