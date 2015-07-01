@@ -26,7 +26,7 @@ body{
 }
 
 @-webkit-keyframes containerAnim {
-   0% {@include addRotate(760deg, 0)}
+   0% {@include addRotate(-90deg, 0)}
    100% {@include addRotate(0deg, 1)}
 }
 .container-anim {
@@ -150,9 +150,10 @@ a {
 		max-width: 500px;
 		padding: 20px;
 		margin: 100px auto;
-		border-radius: 20px;
-		box-shadow: 5px 5px 10px 0 #000, inset 0 0 3px 1px #000;
+		border-radius: 10px;
+		box-shadow: 2px 2px 5px 0 #000;
 		@media screen and (max-width: 550px){
+			border-radius: 5px;
 			width: 85%;
 			margin: 50px auto;
 			padding: 10px;
