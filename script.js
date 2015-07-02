@@ -2,6 +2,9 @@ var points=0;
 $(document).ready(function(){
 });
 $(window).ready(function(){
+	history.pushState("", "page", "");
+	var len=history.length;   
+	alert(" "+len);
 });
 	$('body').on('click','button.wrong', function(){
 		$(this).css({'background':'#f00'}).addClass('button-zoom').delay(500).queue(function(next){
@@ -27,7 +30,7 @@ $(window).ready(function(){
 		$('.points').html("Points: "+points);
 	});
 $(document).on('pagebeforeshow',function(){
-	console.log('pagebeforeshow');
+	history.pushState("", "page", "");
 	var page = $('body').pagecontainer( 'getActivePage' ).attr( 'id' );
 	if(page == "pagequestions"){
 		$('.points').html("Points: "+points);
