@@ -33,7 +33,7 @@ $(document).on('pagebeforeshow',function(){
 		$('.points').html("Points: "+points);
 	}
 	if(page == "results"){
-		$('.total-points').html("Total Points: "+points);
+		$('.total-points').html("Total Points: "+points+"/95");
 		if(points >= 85){
 			$('.rank').html("<b>Your rank:</b><br><i>\"You live and breathe supercars!\"</i>");
 			$('.total-points').css({'color':'#0f0'});
