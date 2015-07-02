@@ -2,9 +2,6 @@ var points=0;
 $(document).ready(function(){
 });
 $(window).ready(function(){
-	history.pushState("", "page", "");
-	var len=history.length;   
-	alert(" "+len);
 });
 	$('body').on('click','button.wrong', function(){
 		$(this).css({'background':'#f00'}).addClass('button-zoom').delay(500).queue(function(next){
